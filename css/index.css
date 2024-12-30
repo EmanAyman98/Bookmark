@@ -1,0 +1,30 @@
+.container-fluid{
+    background-color: #f7ecde;
+   
+}
+ h1{
+    font-family: "Pacifico", cursive;
+    z-index: 1;
+    font-size: 50px;
+}
+h2{
+    font-family: "Righteous", sans-serif;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+}
+h1::before{
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 25%;
+    background-color: #fec260;
+    bottom: 10px;
+    z-index:-1;
+    transition: height 350ms ;
+
+}
+h1:hover::before {
+    height: 50%;
+}
